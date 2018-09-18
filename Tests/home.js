@@ -1,9 +1,15 @@
 document.addEventListener('DOMContentLoaded', function() {
   console.log('working!')
 
+  var elements = document.querySelectorAll('.modal')
+   var instances1 = M.Modal.init(elements)
+
   //for drop down menu
   let elems = document.querySelectorAll('select');
   let instances = M.FormSelect.init(elems)
+  let favoriteB = document.getElementById("favoriteB")
+  let favoriteQuote = ''
+  let favQuote = ''
   let arr = []
   let funnyArr = []
   let courageArr = []
@@ -29,6 +35,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let truthQ = truthArr[Math.floor(Math.random() * truthArr.length)]
 
+    let loveQ = loveArr[Math.floor(Math.random() * loveArr.length)]
+
     //display random quotes on card based on categories
 
     if (title.innerText === 'Motivation') {
@@ -46,6 +54,10 @@ document.addEventListener('DOMContentLoaded', function() {
     } else if (title.innerText === 'Truth') {
 
       cardText.innerText = truthQ
+
+    } else if (title.innerText === 'Love') {
+
+      cardText.innerText = loveQ
     }
 
 
@@ -124,22 +136,48 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     })
 
-    //TRUTH Quotes
-    axios.get('https://favqs.com/api/quotes/?filter=love&type=tag', {
-        headers: {
-          authorization: `Token token="31df3f9a7d60256ca1294d7f49bbf678"`
-        }
-      })
+  //TRUTH Quotes
+  axios.get('https://favqs.com/api/quotes/?filter=love&type=tag', {
+      headers: {
+        authorization: `Token token="31df3f9a7d60256ca1294d7f49bbf678"`
+      }
+    })
 
-      .then(function(response) {
-        let loveResponse = response.data.quotes
+    .then(function(response) {
+      let loveResponse = response.data.quotes
 
-        for (let i = 0; i < loveResponse.length; i++) {
+      for (let i = 0; i < loveResponse.length; i++) {
 
-          loveArr.push(`"` + loveResponse[i].body + `"` + " -" + loveResponse[i].author)
+        loveArr.push(`"` + loveResponse[i].body + `"` + " -" + loveResponse[i].author)
 
-        }
-      })
+      }
+    })
+
+
+  //favorite button event listener to add to local storage
+
+  favoriteB.addEventListener("click", function() {
+
+      favQuote = cardText.innerText
+
+      favoriteQuote = JSON.parse(localStorage.getItem('favoriteQuote'))
+
+
+      if (favoriteQuote === null) {
+
+        favoriteQuote = [`${favQuote}`]
+
+      } else {
+
+        favoriteQuote.push(favQuote)
+
+      }
+
+
+
+    localStorage.setItem('favoriteQuote', JSON.stringify(favoriteQuote))
+
+  })
 
 
 

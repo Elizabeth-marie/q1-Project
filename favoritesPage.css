@@ -1,0 +1,25 @@
+img {
+  height: 25%;
+  width: 25%;
+}
+
+a.navtext {
+  margin-right: 15px;
+  font-family: Cinzel;
+  font-size: 150%;
+  letter-spacing: 4px;
+}
+
+h2.header {
+  font-family: Cinzel;
+  font-size: 80px;
+  text-align: center;
+  letter-spacing: .2em;
+  margin-bottom: -40px;
+}
+
+h3.header2 {
+  font-family: Tangerine;
+  text-align: center;
+  font-size: 50px;
+}

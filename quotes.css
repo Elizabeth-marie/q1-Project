@@ -1,0 +1,70 @@
+a.navtext {
+  margin-right: 15px;
+  font-family: Cinzel;
+  font-size: 150%;
+  letter-spacing: 4px;
+}
+
+a.brand-logo {
+  font-family: Cinzel;
+  font-size: 150%;
+  letter-spacing: 4px;
+}
+
+h2.header {
+  font-family: Tangerine;
+  color: black;
+  text-align: center;
+  font-size: 150px;
+  letter-spacing: 5px;
+  margin-bottom: -10px;
+}
+
+
+a.dropdown-trigger.btn.black {
+  height: 50%;
+  width: 40%;
+  padding-top: 7px;
+  font-family: Cinzel;
+  font-size: 20px;
+  letter-spacing: 2px;
+  border-radius: 25px;
+  margin: 0 30%;
+}
+
+a.black-text {
+  font-family: Cincel;
+  letter-spacing: 2px;
+}
+
+div.card-panel.white {
+  margin-top: -15px;
+  opacity: 0.75;
+  text-align: center;
+  font-family: Cinzel;
+  font-size: 25px;
+  font-style: italic;
+  padding-top: 0px;
+}
+
+#Genre {
+  font-family: Tangerine;
+  font-size: 75px;
+  letter-spacing: 2px;
+}
+
+body {
+  height: 100%;
+}
+
+div.parallax-container {
+height: 800px;
+}
+
+#randomQuote.black-text {
+  margin-top: -10px;
+}
+
+div.section.blue-grey.darken-3 {
+  align-items: center;
+}

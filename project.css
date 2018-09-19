@@ -24,6 +24,7 @@ div.card-panel.white {
   opacity: 0.75;
   text-align: center;
   padding-top: 72px;
+  align-items: center;
 }
 
 span.black-text {

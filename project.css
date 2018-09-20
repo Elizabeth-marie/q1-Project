@@ -38,5 +38,9 @@ a.navtext {
   font-family: Cinzel;
   font-size: 150%;
   letter-spacing: 4px;
+}
 
+a.mobileMenu {
+  font-family: Cinzel;
+  letter-spacing: 2px;
 }

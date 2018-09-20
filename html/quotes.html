@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Inspiration</title>
+  <link rel="stylesheet" href="quotes.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+  <link rel="stylesheet" href="https://fonts.googleapis.com">
+  <script src="quotes.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+
+<body>
+  <div class="section blue-grey darken-3">
+    <div class="row container">
+      <div class="row">
+        <h2 class="header">Find a Quote</h2>
+        <div class="row">
+          <h3 class="header2">(when the quote appears, click the heart button to save to your favorites!)</h3>
+        </div>
+      </div>
+      <a class='dropdown-trigger btn black' href='#' data-target='dropdown1'>Choose a Category</a>
+      <ul id='dropdown1' class='dropdown-content'>
+        <li><a class="black-text" href="#!">Motivation</a></li>
+        <li><a class="black-text" href="#!">Funny</a></li>
+        <li><a class="black-text" href="#!">Courage</a></li>
+        <li><a class="black-text" href="#!">Truth</a></li>
+        <li><a class="black-text" href="#!">Love</a></li>
+      </ul>
+    </div>
+  </div>
+  <nav>
+    <div class="nav-wrapper grey lighten-2">
+      <a href="#" class="brand-logo">Inspiration</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a class="navtext" href="project.html">Home</a></li>
+        <li><a class="navtext" href="quotes.html">Quotes</a></li>
+        <li><a class="navtext" href="favoritesPage.html">Favorites</a></li>
+      </ul>
+    </div>
+  </nav>
+  <ul class="sidenav" id="mobile-demo">
+    <li><a class="mobileMenu" href="project.html">Home</a></li>
+    <li><a class="mobileMenu" href="quotes.html">Quotes</a></li>
+    <li><a class="mobileMenu" href="favoritesPage.html">Favorites</a></li>
+  </ul>
+  <div class="parallax-container">
+    <div class="parallax"><img src="rawpixel-593607-unsplash.jpg"></div>
+    <div class="row">
+      <div class="row"></div>
+      <div id="firstRow" class="row"></div>
+      <div class="row"></div>
+      <div class="row"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col s12 m5">
+        <div id='cardPanel' class="card-panel white" hidden>
+          <div class="column">
+            <a id="favoriteB" data-target="modal1" class="btn modal-trigger btn-floating btn-large waves-effect waves-light red"><i class=" large material-icons">favorite</i></a>
+            <div id="modal1" class="modal">
+              <div class="modal-content">
+                <h4>The quote has been saved to your favorites!</h4>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Ok!</a>
+              </div>
+            </div>
+          </div>
+          <span id="Genre"></span>
+          <p id="randomQuote" class="black-text"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

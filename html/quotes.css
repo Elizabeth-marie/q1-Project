@@ -39,6 +39,7 @@ a.dropdown-trigger.btn.black {
   border-radius: 25px;
   margin: 0 30%;
   margin-bottom: 10px;
+  align-items: center;
 }
 
 a.black-text {
@@ -47,16 +48,16 @@ a.black-text {
 }
 
 div.card-panel.white {
-  margin-top: -15px;
   opacity: 0.75;
   text-align: center;
   font-family: Cinzel;
   font-size: 25px;
   font-style: italic;
-  padding-top: 0px;
+  margin: 0px auto;
+  width: 500px;
 }
 
-#Genre {
+  #Genre {
   font-family: Tangerine;
   font-size: 75px;
   letter-spacing: 2px;
@@ -82,3 +83,7 @@ a.mobileMenu {
   font-family: Cinzel;
   letter-spacing: 2px;
 }
+div.parallax-container {
+  height: 350px;
+}
+#cardPanel

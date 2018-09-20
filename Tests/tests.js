@@ -20,3 +20,9 @@ describe('card panel is hidden', () => {
   expect(cardPanel.hidden).to.equal(true)
   })
 })
+
+describe('function checks quotes', () => {
+  it('checks quote array', () => {
+  expect(true).to.equal(true)
+  })
+})

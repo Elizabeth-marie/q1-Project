@@ -15,23 +15,8 @@
 </head>
 
 <body>
-  <div class="section blue-grey darken-3">
-    <div class="row container">
-      <div class="row">
-        <h2 class="header">Find a Quote</h2>
-        <div class="row">
-          <h3 class="header2">(when the quote appears, click the heart button to save to your favorites!)</h3>
-        </div>
-      </div>
-      <a class='dropdown-trigger btn black' href='#' data-target='dropdown1'>Choose a Category</a>
-      <ul id='dropdown1' class='dropdown-content'>
-        <li><a class="black-text" href="#!">Motivation</a></li>
-        <li><a class="black-text" href="#!">Funny</a></li>
-        <li><a class="black-text" href="#!">Courage</a></li>
-        <li><a class="black-text" href="#!">Truth</a></li>
-        <li><a class="black-text" href="#!">Love</a></li>
-      </ul>
-    </div>
+  <div class="parallax-container">
+    <div class="parallax"><img src="rawpixel-593607-unsplash.jpg"></div>
   </div>
   <nav>
     <div class="nav-wrapper grey lighten-2">
@@ -49,48 +34,47 @@
     <li><a class="mobileMenu" href="quotes.html">Quotes</a></li>
     <li><a class="mobileMenu" href="favoritesPage.html">Favorites</a></li>
   </ul>
-  <div class="parallax-container">
-    <div class="parallax"><img src="rawpixel-593607-unsplash.jpg"></div>
-    <div class="row">
-      <div class="row"></div>
-      <div id="firstRow" class="row"></div>
-      <div class="row"></div>
-      <div class="row"></div>
-      <div class="col"></div>
-      <div class="col"></div>
-      <div class="col"></div>
-      <div class="col"></div>
-      <div class="col"></div>
-      <div class="col"></div>
-      <div class="col"></div>
-      <div class="col"></div>
-      <div class="col"></div>
-      <div class="col"></div>
-      <div class="col"></div>
-      <div class="col"></div>
-      <div class="col"></div>
-      <div class="col"></div>
-      <div class="col s12 m5">
-        <div id='cardPanel' class="card-panel white" hidden>
-          <div class="column">
-            <a id="favoriteB" data-target="modal1" class="btn modal-trigger btn-floating btn-large waves-effect waves-light red"><i class=" large material-icons">favorite</i></a>
-            <div id="modal1" class="modal">
-              <div class="modal-content">
-                <h4>The quote has been saved to your favorites!</h4>
-              </div>
-              <div class="modal-footer">
-                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Ok!</a>
-              </div>
-            </div>
-          </div>
-          <span id="Genre"></span>
-          <p id="randomQuote" class="black-text"></p>
+  <div class="section white">
+    <div class="row container">
+      <div class="row">
+        <h2 class="header">Find a Quote</h2>
+        <div class="row">
+          <h3 class="header2">(when the quote appears, click the heart button to save to your favorites!)</h3>
         </div>
       </div>
+      <a class='dropdown-trigger btn black' href='#' data-target='dropdown1'>Choose a Category</a>
+      <ul id='dropdown1' class='dropdown-content'>
+        <li><a class="black-text" href="#!">Motivation</a></li>
+        <li><a class="black-text" href="#!">Funny</a></li>
+        <li><a class="black-text" href="#!">Courage</a></li>
+        <li><a class="black-text" href="#!">Truth</a></li>
+        <li><a class="black-text" href="#!">Love</a></li>
+      </ul>
     </div>
   </div>
+  <div class="row">
+    <div class="row"></div>
+    <div id="firstRow" class="row"></div>
+      <div id='cardPanel' class="card-panel white" hidden>
+        <div class="column">
+          <a id="favoriteB" data-target="modal1" class="btn modal-trigger btn-floating btn-large waves-effect waves-light red"><i class=" large material-icons">favorite</i></a>
+          <div id="modal1" class="modal">
+            <div class="modal-content">
+              <h4>The quote has been saved to your favorites!</h4>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-close waves-effect waves-green btn-flat">Ok!</a>
+            </div>
+          </div>
+        </div>
+        <span id="Genre"></span>
+        <p id="randomQuote" class="black-text"></p>
+      </div>
+  </div>
 
-
+  <div class="parallax-container">
+    <div class="parallax"><img src="rawpixel-593607-unsplash.jpg"></div>
+  </div>
 </body>
 
 </html>
